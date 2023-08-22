@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  {{> head title=title description=description }} {{#> bodyWrapper }}
+  <div class="rounded-t-3xl bg-grey-500 p-6">
+    <div class="aspect-video">
+      <iframe
+        class="h-full w-full"
+        src="https://www.youtube.com/embed/CFTz4GLeQa4"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+  {{#> sectionWrapper }}
+  <div class="bg-grey-100 px-32 py-4">
+    <h1>VTubers</h1>
+    <p>
+      Need a specially-crafted commentator for your YouTube video? Check out my
+      VTubers, like AlisaDraws!
+    </p>
+  </div>
+  <div class="bg-grey-200 px-32 py-4">
+    <h2>VTubers available</h2>
+    I currently only have AlisaDraws, but I'm working on other VTubers for
+    specific purposes.
+  </div>
+  {{/sectionWrapper}} {{/bodyWrapper}}
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  {{> head title=title description=description }} {{#> bodyWrapper
+  id="illustration-page"}}
+  <a
+    href="{{featured_illustration.url}}"
+    class="aspect-video"
+    data-illustration
+  >
+    <img
+      class="h-full w-full rounded-t-3xl object-cover"
+      src="{{featured_illustration.url}}"
+    />
+  </a>
+  {{#> sectionWrapper}}
+  <div class="bg-grey-200 px-32 py-4 text-center">
+    <h1>Illustrations</h1>
+    <p>Here are some of my digital illustrations.</p>
+  </div>
+  {{/sectionWrapper}}
+  <ul
+    class="flex flex-wrap items-center justify-center gap-x-1 gap-y-2 pb-4"
+    id="illustrations"
+  >
+    {{#each other_illustrations}}
+    <li class="w-1/4">
+      <a data-illustration href="{{this.url}}">
+        <img
+          src="{{this.url}}"
+          alt="{{this.alt}}"
+          class="inline-block aspect-square w-full object-cover"
+        />
+      </a>
+    </li>
+    {{/each}}
+  </ul>
+  {{/ bodyWrapper }}
+</html>

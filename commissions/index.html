@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  {{> head title=title description=description }} {{#> bodyWrapper}} {{>
+  commissionStatus baseUrl=baseUrl }} {{#> sectionWrapper}}
+  <div class="bg-grey-200 p-4">
+    <h2>Pricing for Live2D</h2>
+    <table>
+      <thead class="sr-only">
+        <tr>
+          <th>Plan</th>
+          <th>Price</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each pricingPlansLive2D }}
+        <tr>
+          <td>{{this.name}}:</td>
+          <td>{{this.price}}</td>
+          <td>{{this.description}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <h2 class="mt-1">License:</h2>
+    <table>
+      <thead class="sr-only">
+        <tr>
+          <th>Plan</th>
+          <th>Price multiplier</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each licensePrices }}
+        <tr>
+          <td>{{this.name}}:</td>
+          <td>&times;{{this.multiplier}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+  {{/sectionWrapper}} {{#> sectionWrapper}}
+  <h2 class="sr-only">Contact me</h2>
+  <div class="bg-grey-500 px-24 py-4 text-center">
+    <p>
+      Considering the conditions, if you desire to contact me, you can do so
+      through here:
+    </p>
+    <button class="text-lg" id="contact-form-modal-button">
+      [ Message Me ]
+    </button>
+  </div>
+  {{/ sectionWrapper}}
+
+  <dialog
+    id="contact-form-modal"
+    class="mx-auto w-full max-w-md rounded-2xl bg-grey-100 p-8 text-grey-900 shadow-md"
+  >
+    <form action="" method="dialog" class="flex flex-col">
+      <div class="mb-4 flex flex-col">
+        <label for="contact-form-name"> Name: </label>
+        <input type="text" name="name" id="contact-form-name" required />
+      </div>
+      <div class="mb-4 flex flex-col">
+        <label for="contact-form-email"> E-mail: </label>
+        <input type="email" name="email" id="contact-form-email" required />
+      </div>
+      <div class="mb-4 flex flex-col">
+        <label for="contact-form-message"> Message: </label>
+        <textarea name="message" id="contact-form-message" required></textarea>
+      </div>
+      <div class="flex items-center justify-between">
+        <button type="submit">Send message</button>
+        <button type="reset" data-close>Close</button>
+      </div>
+    </form>
+  </dialog>
+
+  {{/ bodyWrapper }}
+</html>

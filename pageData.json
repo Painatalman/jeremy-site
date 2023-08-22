@@ -1,0 +1,195 @@
+{
+  "/index.html": {
+    "title": "EyeOdin's portfolio",
+    "description": "The work and services of the creator of popular Krita plugin PigmenIO"
+  },
+  "/illustration.html": {
+    "title": "Illustrations | EyeOdin's Portfolio",
+    "description": "Featured drawings and models from EyeOdin",
+    "featured_illustration": {
+      "url": "https://placekitten.com/1280/720",
+      "alt": ""
+    },
+    "other_illustrations": [
+      { "url": "https://placekitten.com/1280/420", "alt": "" },
+      { "url": "https://placekitten.com/1280/560", "alt": "" },
+      { "url": "https://placekitten.com/580/100", "alt": "" },
+      { "url": "https://placekitten.com/280/90", "alt": "" },
+      { "url": "https://placekitten.com/1280/768", "alt": "" }
+    ]
+  },
+  "/commissions/index.html": {
+    "title": "Commissions | EyeOdin's Portfolio",
+    "description": "Prices for my services",
+    "areCommissionsOpen": true,
+    "commissionStatusLinks": [
+      {
+        "url": "tips/index.html",
+        "label": "Illustrator Best Practises"
+      },
+      {
+        "url": "terms-of-service/index.html",
+        "label": "Terms of Service"
+      }
+    ],
+    "pricingPlansLive2D": [
+      {
+        "name": "Full Body",
+        "price": "500 €",
+        "description": "Head and Body XYZ, Physics, 3 Basic Animations, 1 outfit"
+      },
+      {
+        "name": "Chibi",
+        "price": "300 €",
+        "description": "Same as Full Body"
+      },
+      {
+        "name": "Outfit",
+        "price": "200 €",
+        "description": "Assumes body is already created"
+      },
+      {
+        "name": "Confidentiality",
+        "price": "100 €",
+        "description": "Assumes body is already created"
+      },
+      {
+        "name": "Animations",
+        "price": "50 €/anim.",
+        "description": "Rig is created for movement, so these are decided before start"
+      }
+    ],
+    "licensePrices": [
+      { "name": "Personal", "multiplier": "1.05" },
+      { "name": "Commercial", "multiplier": "2.55" }
+    ]
+  },
+  "/plugins/index.html": {
+    "title": "Plugins | EyeOdin's portfolio",
+    "description": "Plugins developed by me",
+    "plugins": [
+      {
+        "title": "Pigment.O",
+        "slug": "pigment-o"
+      },
+      {
+        "title": "Imagine Board",
+        "slug": "imagine-board"
+      },
+      {
+        "title": "Timer Watch",
+        "slug": "timer-watch"
+      }
+    ]
+  },
+  "/plugins/pigment-o.html": {
+    "title": "Pigment.O | Plugins | EyeOdin's portfolio",
+    "description": "Plugins developed by me",
+    "plugin": {
+      "title": "Pigment. O",
+      "slug": "pigment-o"
+    }
+  },
+  "/plugins/imagine-board.html": {
+    "title": "Imagine Board | Plugins | EyeOdin's portfolio",
+    "description": "Plugins developed by me",
+    "plugin": {
+      "title": "Imagine Board",
+      "slug": "imagine-board"
+    }
+  },
+  "/plugins/timer-watch.html": {
+    "title": "Timer Watch | Plugins | EyeOdin's portfolio",
+    "description": "Plugins developed by me",
+    "plugin": {
+      "title": "Timer Watch",
+      "slug": "timer-watch"
+    }
+  },
+  "/tips/index.html": {
+    "title": "Illustrator Best Practices | EyeOdin",
+    "description": "Various tips to help with vtuber creation",
+    "tips": [
+      {
+        "thumbnail": "1.png",
+        "problem": "All Layers and Folders have unique names",
+        "solution": "Incorrect importing from PSD file"
+      },
+      {
+        "thumbnail": "2.png",
+        "problem": "Document has even pixel width",
+        "solution": "Possible mirror axis from float value"
+      },
+      {
+        "thumbnail": "3.png",
+        "problem": "Document has mirror axis at width's center",
+        "solution": "Mirror ambiguity when fixing mirror errors"
+      },
+      {
+        "thumbnail": "4.png",
+        "problem": "Character has a mirrored stance",
+        "solution": "Slower rig production and unequal deformations between left and right"
+      },
+      {
+        "thumbnail": "5.png",
+        "problem": "Elements are separated by layers",
+        "solution": "Flat deformations"
+      },
+      {
+        "thumbnail": "6.png",
+        "problem": "Elements are painted fully even when behind other elements",
+        "solution": "Restricted movement and physics"
+      },
+      {
+        "thumbnail": "7.png",
+        "problem": "Full body exists even behind clothes",
+        "solution": "Anatomically correct rotations and extra outfit possibilities"
+      },
+      {
+        "thumbnail": "8.png",
+        "problem": "Female chests are separated elements",
+        "solution": "Better physics for each element"
+      },
+      {
+        "thumbnail": "9.png",
+        "problem": "Distorted elements in neutral pose have a non-distorted element copy",
+        "solution": "Texture erosion from undistorting the element"
+      },
+      {
+        "thumbnail": "10.png",
+        "problem": "Elements are not just thin lines",
+        "solution": "Pixelated distortions"
+      },
+      {
+        "thumbnail": "11.png",
+        "problem": "Lineart is preserved as a copy when line and fill are merged together",
+        "solution": "Preservation of foreshortnening on lineart"
+      },
+      {
+        "thumbnail": "12.png",
+        "problem": "Creation of a character sheet with various views",
+        "solution": "Elements hidden in forward neutral pose can be conceptualized"
+      },
+      {
+        "thumbnail": "13.png",
+        "problem": "Creation of elements for poses higher than 45 degree turns",
+        "solution": "Stiff rig that only looks forward"
+      },
+      {
+        "thumbnail": "14.png",
+        "problem": "Elements for light and shadow in another layer",
+        "solution": "Static lights baked into the skin"
+      },
+      {
+        "thumbnail": "15.png",
+        "problem": "Creation of extra replacement elements for animations",
+        "solution": "Mesh distortions that breaks illustration"
+      },
+      {
+        "thumbnail": "16.png",
+        "problem": "Clumped hair is separated by layers",
+        "solution": "Conflicting hair physics"
+      }
+    ]
+  }
+}

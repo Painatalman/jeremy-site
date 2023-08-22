@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  {{> head title=title description=description }} {{#> bodyWrapper}}
+  <!-- prettierignore -->
+  {{> banner background="/banners/plugins.png" }} {{#> sectionWrapper}}
+  <div class="bg-grey-100 px-24 py-8 text-center">
+    <h1 class="mb-4">Plugins</h1>
+    <p class="mb-4">
+      My Krita plugin suite is designed for an improved workflow. Most questions
+      can be answered by reading the respective project's Github Wiki.
+    </p>
+    <p>If my plugins served you properly, please do consider donating.</p>
+  </div>
+  <blockquote class="bg-grey-500 px-24 py-4 text-center text-lg">
+    "Send me your messags if you want to be quoted here." — EyeOdin
+  </blockquote>
+  <div class="bg-grey-100 px-12 py-4">
+    <div class="grid grid-cols-2 gap-4">
+      {{# each plugins }}
+      <!-- prettierignore -->
+      <a
+        href="{{../baseUrl}}plugins/{{this.slug}}.html"
+        class="flex items-center justify-center rounded-3xl bg-grey-200 p-4"
+      >
+        <img
+          class="w-full"
+          src="/images/plugins/{{this.slug}}/icon.png"
+          title="{{this.name}}"
+        />
+      </a>
+      {{/each}}
+    </div>
+  </div>
+  {{/sectionWrapper}} {{/bodyWrapper}}
+</html>

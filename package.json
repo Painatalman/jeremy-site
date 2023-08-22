@@ -1,0 +1,26 @@
+{
+  "name": "ricardo-jeremias-site",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env TAILWIND_MODE=watch vite",
+    "build": "cross-env-shell TAILWIND_MODE=build BASE_URL=https://painatalman.github.io/jeremy-site/ vite build --base=https://painatalman.github.io/jeremy-site/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@eslint/js": "^8.47.0",
+    "autoprefixer": "^10.4.14",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.47.0",
+    "eslint-plugin-tailwindcss": "^3.13.0",
+    "postcss": "^8.4.27",
+    "prettier-plugin-tailwindcss": "^0.5.3",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.5",
+    "vite-plugin-handlebars": "^1.6.0"
+  },
+  "dependencies": {
+    "@barba/core": "^2.9.7"
+  }
+}

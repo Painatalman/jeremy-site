@@ -1,0 +1,16 @@
+<div
+  class="pt-12 px-24 rounded-t-3xl text-center {{#if areCommissionsOpen }}bg-green-dark{{else}}bg-red{{/if}}"
+>
+  <h1 class="text-xl uppercase text-black">
+    Commission Status: {{#if areCommissionsOpen }}Open{{else}}Closed{{/if}}
+  </h1>
+  <ul class="flex list-none justify-between py-16">
+    {{#each commissionStatusLinks }}
+    <li class="w-24">
+      <a class="text-grey-200" href="{{../baseUrl}}{{this.url}}"
+        >{{this.label}}</a
+      >
+    </li>
+    {{/each}}
+  </ul>
+</div>
