@@ -67,6 +67,20 @@
   "/plugins/index.html": {
     "title": "Plugins | EyeOdin's portfolio",
     "description": "Plugins developed by me",
+    "quotes": [
+      {
+        "message": "Pigment.IO is one of the top Krita plugins ever",
+        "author": "Various"
+      },
+      {
+        "message": "I like shorts. They're comfy and easy to wear",
+        "author": "Some Youngster"
+      },
+      {
+        "message": "YOU'RE HIRED!",
+        "author": "Vince McMahon"
+      }
+    ],
     "plugins": [
       {
         "title": "Pigment.O",

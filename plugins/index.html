@@ -11,11 +11,19 @@
     </p>
     <p>If my plugins served you properly, please do consider donating.</p>
   </div>
-  <blockquote class="bg-grey-500 px-24 py-4 text-center text-lg">
-    "Send me your messags if you want to be quoted here." — EyeOdin
+  <blockquote
+    class="bg-grey-500 px-24 py-4 text-center text-lg"
+    id="plugin-quote"
+  >
+    <p data-quote-placeholder>
+      "Send me your messages to be quoted here." — EyeOdin
+    </p>
+    {{# each quotes }}
+    <p style="display: none" data-quote>"{{this.message}}" — {{this.author}}</p>
+    {{/each}}
   </blockquote>
   <div class="bg-grey-100 px-12 py-4">
-    <div class="grid grid-cols-2 gap-4">
+    <div class="grid grid-cols-2 gap-4 lg:grid-cols-3">
       {{# each plugins }}
       <!-- prettierignore -->
       <a
