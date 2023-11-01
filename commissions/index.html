@@ -2,9 +2,9 @@
 <html lang="en">
   {{> head title=title description=description }} {{#> bodyWrapper}} {{>
   commissionStatus baseUrl=baseUrl }} {{#> sectionWrapper}}
-  <div class="bg-grey-200 p-4">
+  <div class="bg-grey-200 px-8 py-4">
     <h2>Pricing for Live2D</h2>
-    <table>
+    <table class="mb-4">
       <thead class="sr-only">
         <tr>
           <th>Plan</th>
@@ -16,7 +16,7 @@
         {{#each pricingPlansLive2D }}
         <tr>
           <td>{{this.name}}:</td>
-          <td>{{this.price}}</td>
+          <td class="px-4">{{this.price}}</td>
           <td>{{this.description}}</td>
         </tr>
         {{/each}}
@@ -34,7 +34,7 @@
         {{#each licensePrices }}
         <tr>
           <td>{{this.name}}:</td>
-          <td>&times;{{this.multiplier}}</td>
+          <td class="pl-4">&times;{{this.multiplier}}</td>
         </tr>
         {{/each}}
       </tbody>

@@ -51,12 +51,12 @@
       {
         "name": "Confidentiality",
         "price": "100 €",
-        "description": "Assumes body is already created"
+        "description": "No streaming or social sharing"
       },
       {
         "name": "Animations",
         "price": "50 €/anim.",
-        "description": "Rig is created for movement, so these are decided before start"
+        "description": "Animations are planned prior to rig creation"
       }
     ],
     "licensePrices": [

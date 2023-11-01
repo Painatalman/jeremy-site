@@ -20,7 +20,11 @@ export default {
     fontFamily: {
       sans: ["Rajdhani"],
     },
-    extend: {},
+    extend: {
+      maxWidth: {
+        container: "840px",
+      },
+    },
   },
   plugins: [],
 };
