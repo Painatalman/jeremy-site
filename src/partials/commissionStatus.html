@@ -4,9 +4,9 @@
   <h1 class="text-xl uppercase text-black">
     Commission Status: {{#if areCommissionsOpen }}Open{{else}}Closed{{/if}}
   </h1>
-  <ul class="flex list-none justify-between py-16">
+  <ul class="flex list-none items-center justify-between py-16">
     {{#each commissionStatusLinks }}
-    <li class="w-24">
+    <li class="w-40">
       <a class="text-grey-200" href="{{../baseUrl}}{{this.url}}"
         >{{this.label}}</a
       >
