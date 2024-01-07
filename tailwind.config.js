@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 export default {
-  content: ["./**/*.{php,html,js}"],
+  content: ["./**/*.{php,html,js,hbs}"],
   theme: {
     backgroundImage: {
       default: "url('/background.png')",
@@ -22,7 +22,7 @@ export default {
     },
     extend: {
       maxWidth: {
-        container: "840px",
+        container: "960px",
       },
     },
   },
