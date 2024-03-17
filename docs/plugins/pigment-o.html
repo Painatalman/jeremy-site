@@ -4,17 +4,17 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1.0' />
   <title>Pigment.O | Plugins | EyeOdin&#x27;s portfolio</title>
-    <meta name='description' content='Plugins developed by me' />
+    <meta name='description' content='It&#x27;s both a Colour Picker and Colour Mixer. An agnotic colour calculator that uses the document as a reference. Built as an universal solution inside docker.' />
   
   <link
     rel='stylesheet'
     href='https://painatalman.github.io/jeremy-site/vendor/lightgallery/css/lightgallery.css'
   />
-  <script type="module" crossorigin src="https://painatalman.github.io/jeremy-site/assets/index-9482f26c.js"></script>
-  <link rel="stylesheet" href="https://painatalman.github.io/jeremy-site/assets/index-88e7a86d.css">
+  <script type="module" crossorigin src="https://painatalman.github.io/jeremy-site/assets/index-8ec7d037.js"></script>
+  <link rel="stylesheet" href="https://painatalman.github.io/jeremy-site/assets/index-37acedbe.css">
 </head>
  <body  class="flex min-h-screen flex-col bg-default bg-fixed font-sans">
-  <header class='bg-grey-200 py-4 text-grey-900 fixed top-0 left-0 right-0 shadow-sm shadow-[#999]'>
+  <header class='bg-grey-200 py-4 text-grey-900 fixed top-0 left-0 right-0 shadow-sm shadow-[#999] z-50'>
     <div class='container max-w-container mx-auto max-lg:px-4 flex justify-between'>
       <ul class='list-none flex flex-start items-center gap-2'>
           <li><a href='https://www.twitch.tv/eyeodin' aria-label='Twitch'><svg
@@ -85,59 +85,137 @@
      
       <!-- prettierignore -->
       <h1
-      class="flex aspect-video items-center justify-center rounded-t-3xl px-24 pt-12 text-center"
+      class="relative flex aspect-video items-center justify-center overflow-hidden rounded-t-3xl text-center before:absolute before:inset-0 before:bg-black before:bg-opacity-80"
     >
       <img
-        src="https://painatalman.github.io/jeremy-site/images/plugins/pigment-o/logo.png"
-        class="w-full"
-        alt="Pigment. O"
+        src="https://painatalman.github.io/jeremy-site/images/plugins/pigment-o/banner.png"
+        class="h-full w-full object-cover"
+        alt=""
       />
+      <span
+        class="text-white absolute inset-0 flex items-center justify-center text-[4rem]"
+        >Pigment. O</span
+      >
     </h1>
      <section class="bg-black pt-8 ">
       
-        <div class="bg-grey-100 px-32 py-4">
-          Pigment.O is a Colour Picker and Colour Mixer. An agnotic colour calculator
-          that uses the document as a reference. Constructed to be a universal soluton
-          inside docker.
-        </div>
         <div class="bg-grey-200 px-32 py-4">
-          Modular UI for each workflow and fully scalable. Makes use of presets to
-          simplify settings.
-        </div>
-        <div class="bg-grey-100 px-32 py-4">
-          Harmony rules to create colour sets dynamically within a preferred space.
-        </div>
-        <div class="bg-grey-200 px-32 py-4">
-          Panels with several graphical interfaces. Utility ranges from complementary,
-          classical, and even original.
-        </div>
-        <div class="bg-grey-100 px-32 py-4">
-          Channel sliders allow fine adjustment within their own respective spaces.
-        </div>
-        <div class="bg-grey-200 px-32 py-4">
-          Mixer calculates the interpolation of custom colours within their respective
-          space.
-        </div>
-        <div class="bg-grey-100 px-32 py-4">
-          Pinned colours are a small temporary palette of saved colours that can be
-          recalled easily.
-        </div>
-        <div class="bg-grey-200 px-32 py-4">
-          History keeps track of all selected colours to ensure return to a previous
-          selection.
-        </div>
-        <div class="bg-grey-100 px-32 py-4">
-          Hex code of the colour regardless of space or range. Quickly share hex codes
-          with fast copy-and-paste. Recognizes many colour formatting types and also
-          colours with name.
-        </div>
-        <div class="bg-grey-200 px-32 py-4">
-          Settings for slower performinc systems.
-        </div>
-        <div class="bg-grey-100 px-32 py-4">
-          API allows direct interaction from other plugins.
-        </div>
-        </section>
+        <p>It&#x27;s both a Colour Picker and Colour Mixer. An agnotic colour calculator that uses the document as a reference. Built as an universal solution inside docker.</p>
+        <p class="mt-4">
+          See <a href="https://github.com/EyeOdin/Pigment.O/wiki" class="underline">Wiki</a> for more details (not
+          presented below).
+        </p>
+      </div>
+       <div
+        class="bg-grey-100 px-4 md:px-32 py-4"
+      >
+        <video class="w-full" src="https://painatalman.github.io/jeremy-site/videos/po_channel_snap.webm" controls></video>
+         
+        <p class="mt-8">Channel sliders allow fine adjustment within their own respective spaces.</p>
+      </div>
+      <div
+        class="bg-grey-200 px-4 md:px-32 py-4"
+      >
+        <video class="w-full" src="https://painatalman.github.io/jeremy-site/videos/po_mixer.webm" controls></video>
+         
+        <p class="mt-8">Mixer calculates the interpolation of custom colours within their respective space.</p>
+      </div>
+      <div
+        class="bg-grey-100 px-4 md:px-32 py-4"
+      >
+        <video class="w-full" src="https://painatalman.github.io/jeremy-site/videos/po_panel.webm" controls></video>
+         
+        <p class="mt-8">Panels with several graphical interfaces. Utility ranges from complementary, classical, and even original.</p>
+      </div>
+      <div
+        class="bg-grey-200 px-4 md:px-32 py-4"
+      >
+        <video class="w-full" src="https://painatalman.github.io/jeremy-site/videos/po_panel_sample.webm" controls></video>
+         
+        <p class="mt-8">Panels (sample)</p>
+      </div>
+      <div
+        class="bg-grey-100 px-4 md:px-32 py-4"
+      >
+        <video class="w-full" src="https://painatalman.github.io/jeremy-site/videos/po_pins.webm" controls></video>
+         
+        <p class="mt-8">Pinned colours are a small temporary palette of saved colours that can be recalled easily.</p>
+      </div>
+      <div
+        class="bg-grey-200 px-4 md:px-32 py-4"
+      >
+        <video class="w-full" src="https://painatalman.github.io/jeremy-site/videos/po_history.webm" controls></video>
+         
+        <p class="mt-8">History keeps track of all selected colours to ensure return to a previous selection.</p>
+      </div>
+      <div
+        class="bg-grey-100 px-4 md:px-32 py-4"
+      >
+        <video class="w-full" src="https://painatalman.github.io/jeremy-site/videos/po_harmony.webm" controls></video>
+         
+        <p class="mt-8">Harmony rules to create colour sets dynamically within a preferred space.</p>
+      </div>
+      <div
+        class="bg-grey-200 px-4 md:px-32 py-4"
+      >
+        <video class="w-full" src="https://painatalman.github.io/jeremy-site/videos/po_color_selection.webm" controls></video>
+         
+        <p class="mt-8">Hex code of the colour regardless of space or range. Quickly share hex codes with fast copy-and-paste. Recognizes many colour formatting types and also colours with name.</p>
+      </div>
+      <div
+        class="bg-grey-100 px-4 md:px-32 py-4"
+      >
+        <video class="w-full" src="https://painatalman.github.io/jeremy-site/videos/po_wheel.webm" controls></video>
+         
+        <p class="mt-8">Colour Wheel</p>
+      </div>
+      <div
+        class="bg-grey-200 px-4 md:px-32 py-4"
+      >
+        <video class="w-full" src="https://painatalman.github.io/jeremy-site/videos/po_pixel_fill.webm" controls></video>
+         
+        <p class="mt-8">Pixel Fill</p>
+      </div>
+      <div
+        class="bg-grey-100 px-4 md:px-32 py-4"
+      >
+        <video class="w-full" src="https://painatalman.github.io/jeremy-site/videos/po_lock_kelvin.webm" controls></video>
+         
+        <p class="mt-8">Lock (Kelvin)</p>
+      </div>
+      <div
+        class="bg-grey-200 px-4 md:px-32 py-4"
+      >
+        <video class="w-full" src="https://painatalman.github.io/jeremy-site/videos/po_lock_cmyk.webm" controls></video>
+         
+        <p class="mt-8">Lock (CMYK)</p>
+      </div>
+      <div
+        class="bg-grey-100 px-4 md:px-32 py-4"
+      >
+        <video class="w-full" src="https://painatalman.github.io/jeremy-site/videos/po_document_analyse.webm" controls></video>
+         
+        <p class="mt-8">Document Analysis</p>
+      </div>
+      <div
+        class="bg-grey-200 px-4 md:px-32 py-4"
+      >
+       
+        <p >Modular UI for each workflow and fully scalable. Makes use of presets to simplify settings.</p>
+      </div>
+      <div
+        class="bg-grey-100 px-4 md:px-32 py-4"
+      >
+       
+        <p >Settings for slower performinc systems.</p>
+      </div>
+      <div
+        class="bg-grey-200 px-4 md:px-32 py-4"
+      >
+       
+        <p >API allows direct interaction from other plugins.</p>
+      </div>
+       </section>
         </main>
   <footer class="py-8 bg-black rounded-b-3xl flex justify-center">
     <span class="w-2"><svg

@@ -4,17 +4,17 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1.0' />
   <title>Timer Watch | Plugins | EyeOdin&#x27;s portfolio</title>
-    <meta name='description' content='Plugins developed by me' />
+    <meta name='description' content='A time management tool to keep track of time spent working (e.g.: during a drawing session)' />
   
   <link
     rel='stylesheet'
     href='https://painatalman.github.io/jeremy-site/vendor/lightgallery/css/lightgallery.css'
   />
-  <script type="module" crossorigin src="https://painatalman.github.io/jeremy-site/assets/index-9482f26c.js"></script>
-  <link rel="stylesheet" href="https://painatalman.github.io/jeremy-site/assets/index-88e7a86d.css">
+  <script type="module" crossorigin src="https://painatalman.github.io/jeremy-site/assets/index-8ec7d037.js"></script>
+  <link rel="stylesheet" href="https://painatalman.github.io/jeremy-site/assets/index-37acedbe.css">
 </head>
  <body  class="flex min-h-screen flex-col bg-default bg-fixed font-sans">
-  <header class='bg-grey-200 py-4 text-grey-900 fixed top-0 left-0 right-0 shadow-sm shadow-[#999]'>
+  <header class='bg-grey-200 py-4 text-grey-900 fixed top-0 left-0 right-0 shadow-sm shadow-[#999] z-50'>
     <div class='container max-w-container mx-auto max-lg:px-4 flex justify-between'>
       <ul class='list-none flex flex-start items-center gap-2'>
           <li><a href='https://www.twitch.tv/eyeodin' aria-label='Twitch'><svg
@@ -85,39 +85,63 @@
      
       <!-- prettierignore -->
       <h1
-      class="flex aspect-video items-center justify-center rounded-t-3xl px-24 pt-12 text-center"
+      class="relative flex aspect-video items-center justify-center overflow-hidden rounded-t-3xl text-center before:absolute before:inset-0 before:bg-black before:bg-opacity-80"
     >
       <img
-        src="https://painatalman.github.io/jeremy-site/images/plugins/timer-watch/logo.png"
-        class="w-full"
-        alt="Timer Watch"
+        src="https://painatalman.github.io/jeremy-site/images/plugins/timer-watch/banner.png"
+        class="h-full w-full object-cover"
+        alt=""
       />
+      <span
+        class="text-white absolute inset-0 flex items-center justify-center text-[4rem]"
+        >Timer Watch</span
+      >
     </h1>
      <section class="bg-black pt-8 ">
       
-        <div class="bg-grey-100 px-32 py-4">
-          Timer Watch is a Time Management Tool. It assists in measuring the time
-          spent working.
-        </div>
         <div class="bg-grey-200 px-32 py-4">
-          Ui with scalable LCD numbers for easy readability.
-        </div>
-        <img src="http://placekitten.com/1200/420" />
-        <div class="bg-grey-100 px-32 py-4">
-          Clock displays the current system hour in hh:mm. Underneath, it shows the
-          progress for your time goal
-        </div>
-        <img src="http://placekitten.com/1200/420" />
-        <div class="bg-grey-200 px-32 py-4">
-          Stopwatch displays the elapsed time in "hh:mm:s" format, and it can start,
-          pause, or reset the count. Underneath, it shows the progress for your time
-          goal.
-        </div>
-        <div class="bg-grey-100 px-32 py-4">
-          The time goal can be set with an editable message or alarm warning.
-        </div>
-        <img src="http://placekitten.com/1200/420" />
-        </section>
+        <p>A time management tool to keep track of time spent working (e.g.: during a drawing session)</p>
+        <p class="mt-4">
+          See <a href="https://github.com/EyeOdin/timer_watch/wiki" class="underline">Wiki</a> for more details (not
+          presented below).
+        </p>
+      </div>
+       <div
+        class="bg-grey-100 px-4 md:px-32 py-4"
+      >
+        <video class="w-full" src="https://painatalman.github.io/jeremy-site/videos/tw_progress.webm" controls></video>
+         
+        <p class="mt-8">Ui with scalable LCD numbers for easy readability.</p>
+      </div>
+      <div
+        class="bg-grey-200 px-4 md:px-32 py-4"
+      >
+        <video class="w-full" src="https://painatalman.github.io/jeremy-site/videos/tw_swap.webm" controls></video>
+         
+        <p class="mt-8">Swap between clock and stopwatch</p>
+      </div>
+      <div
+        class="bg-grey-100 px-4 md:px-32 py-4"
+      >
+        <video class="w-full" src="https://painatalman.github.io/jeremy-site/videos/tw_clock.webm" controls></video>
+         
+        <p class="mt-8">Clock displays the current system hour (formatted as &#x27;hh:mm&#x27;). Underneath, it shows the progress for your time goal</p>
+      </div>
+      <div
+        class="bg-grey-200 px-4 md:px-32 py-4"
+      >
+        <video class="w-full" src="https://painatalman.github.io/jeremy-site/videos/tw_stopwatch_play_pause.webm" controls></video>
+         
+        <p class="mt-8">Stopwatch displays the elapsed time (formatted as &#x27;hh:mm:s&#x27;) and it can start, pause, or reset the count. Underneath, it shows the progress for your time goal.</p>
+      </div>
+      <div
+        class="bg-grey-100 px-4 md:px-32 py-4"
+      >
+        <video class="w-full" src="https://painatalman.github.io/jeremy-site/videos/tw_stopwatch_alarm.webm" controls></video>
+         
+        <p class="mt-8">The time goal can be set with an editable message or alarm warning.</p>
+      </div>
+       </section>
         </main>
   <footer class="py-8 bg-black rounded-b-3xl flex justify-center">
     <span class="w-2"><svg

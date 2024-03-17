@@ -2,28 +2,7 @@
 <html lang="en">
   {{> head title=title description=description }} {{#> bodyWrapper}}
   <!-- prettierignore -->
-  {{> pluginBanner title=plugin.title slug=plugin.slug }} {{#> sectionWrapper}}
-  <div class="bg-grey-100 px-32 py-4">
-    Timer Watch is a Time Management Tool. It assists in measuring the time
-    spent working.
-  </div>
-  <div class="bg-grey-200 px-32 py-4">
-    Ui with scalable LCD numbers for easy readability.
-  </div>
-  <img src="http://placekitten.com/1200/420" />
-  <div class="bg-grey-100 px-32 py-4">
-    Clock displays the current system hour in hh:mm. Underneath, it shows the
-    progress for your time goal
-  </div>
-  <img src="http://placekitten.com/1200/420" />
-  <div class="bg-grey-200 px-32 py-4">
-    Stopwatch displays the elapsed time in "hh:mm:s" format, and it can start,
-    pause, or reset the count. Underneath, it shows the progress for your time
-    goal.
-  </div>
-  <div class="bg-grey-100 px-32 py-4">
-    The time goal can be set with an editable message or alarm warning.
-  </div>
-  <img src="http://placekitten.com/1200/420" />
-  {{/sectionWrapper}} {{/bodyWrapper}}
+  {{> pluginBanner slug=plugin.slug title=plugin.title }} {{#> sectionWrapper}}
+  {{> pluginIntro text=description wiki=wiki}} {{> pluginDetails
+  sections=sections }} {{/sectionWrapper}} {{/bodyWrapper}}
 </html>

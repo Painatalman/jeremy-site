@@ -74,12 +74,17 @@ export default {
         "terms-of-service": resolve(__dirname, "terms-of-service/index.html"),
         tips: resolve(__dirname, "tips/index.html"),
         plugins: resolve(__dirname, "plugins/index.html"),
+        // TODO: make this dynamic
         "plugins/imagine-board": resolve(
           __dirname,
           "plugins/imagine-board.html",
         ),
         "plugins/pigment-o": resolve(__dirname, "plugins/pigment-o.html"),
         "plugins/timer-watch": resolve(__dirname, "plugins/timer-watch.html"),
+        "plugins/project-pages": resolve(
+          __dirname,
+          "plugins/project-pages.html",
+        ),
       },
     },
   },

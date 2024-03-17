@@ -13,6 +13,7 @@ export default {
       "grey-400": "#404040",
       "grey-500": "#555",
       "grey-900": "#999",
+      white: "#fff",
       green: "#8dd5b8",
       "green-dark": "#52bc91",
       red: "#d09696",

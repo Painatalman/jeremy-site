@@ -76,7 +76,7 @@
         "author": "Various"
       },
       {
-        "message": "I like shorts. They're comfy and easy to wear",
+        "message": "I like shorts. They're confy and easy to wear",
         "author": "Some Youngster"
       },
       {
@@ -85,6 +85,10 @@
       }
     ],
     "plugins": [
+      {
+        "title": "Project Pages",
+        "slug": "project-pages"
+      },
       {
         "title": "Pigment.O",
         "slug": "pigment-o"
@@ -99,29 +103,218 @@
       }
     ]
   },
+  "/plugins/project-pages.html": {
+    "title": "Project Pages | Plugins | EyeOdin's portfolio",
+    "description": "A Krita plugin to Compile files into a single project file.",
+    "plugin": {
+      "title": "Project Pages",
+      "slug": "project-pages"
+    },
+    "wiki": "https://github.com/EyeOdin/project_pages/wiki",
+    "sections": [
+      {
+        "description": "File management",
+        "video": "/videos/project_pages_WEBM_pp_files.webm"
+      },
+      {
+        "description": "Mirror Fix",
+        "video": "/videos/project_pages_WEBM_pp_mirror_fix.webm"
+      },
+      {
+        "description": "Set notes",
+        "video": "/videos/project_pages_WEBM_pp_note.webm"
+      },
+      {
+        "description": "Auto-save",
+        "video": "/videos/project_pages_WEBM_pp_page_autosave.webm"
+      },
+      {
+        "description": "Open project folder",
+        "video": "/videos/project_pages_WEBM_pp_project_location.webm"
+      },
+      {
+        "description": "Create new project",
+        "video": "/videos/project_pages_WEBM_pp_project_page_new.webm"
+      },
+      {
+        "description": "Set project thumbnail",
+        "video": "/videos/project_pages_WEBM_pp_project_thumbnail.webm"
+      }
+    ]
+  },
   "/plugins/pigment-o.html": {
     "title": "Pigment.O | Plugins | EyeOdin's portfolio",
-    "description": "Plugins developed by me",
+    "description": "It's both a Colour Picker and Colour Mixer. An agnotic colour calculator that uses the document as a reference. Built as an universal solution inside docker.",
     "plugin": {
       "title": "Pigment. O",
       "slug": "pigment-o"
-    }
+    },
+    "wiki": "https://github.com/EyeOdin/Pigment.O/wiki",
+    "sections": [
+      {
+        "description": "Channel sliders allow fine adjustment within their own respective spaces.",
+        "video": "/videos/po_channel_snap.webm"
+      },
+      {
+        "description": "Mixer calculates the interpolation of custom colours within their respective space.",
+        "video": "/videos/po_mixer.webm"
+      },
+      {
+        "description": "Panels with several graphical interfaces. Utility ranges from complementary, classical, and even original.",
+        "video": "/videos/po_panel.webm"
+      },
+      {
+        "description": "Panels (sample)",
+        "video": "/videos/po_panel_sample.webm"
+      },
+      {
+        "description": "Pinned colours are a small temporary palette of saved colours that can be recalled easily.",
+        "video": "/videos/po_pins.webm"
+      },
+      {
+        "description": "History keeps track of all selected colours to ensure return to a previous selection.",
+        "video": "/videos/po_history.webm"
+      },
+      {
+        "description": "Harmony rules to create colour sets dynamically within a preferred space.",
+        "video": "/videos/po_harmony.webm"
+      },
+      {
+        "description": "Hex code of the colour regardless of space or range. Quickly share hex codes with fast copy-and-paste. Recognizes many colour formatting types and also colours with name.",
+        "video": "/videos/po_color_selection.webm"
+      },
+      {
+        "description": "Colour Wheel",
+        "video": "/videos/po_wheel.webm"
+      },
+      {
+        "description": "Pixel Fill",
+        "video": "/videos/po_pixel_fill.webm"
+      },
+      {
+        "description": "Lock (Kelvin)",
+        "video": "/videos/po_lock_kelvin.webm"
+      },
+      {
+        "description": "Lock (CMYK)",
+        "video": "/videos/po_lock_cmyk.webm"
+      },
+      {
+        "description": "Document Analysis",
+        "video": "/videos/po_document_analyse.webm"
+      },
+      {
+        "description": "Modular UI for each workflow and fully scalable. Makes use of presets to simplify settings."
+      },
+      {
+        "description": "Settings for slower performinc systems."
+      },
+      {
+        "description": "API allows direct interaction from other plugins."
+      }
+    ]
   },
   "/plugins/imagine-board.html": {
     "title": "Imagine Board | Plugins | EyeOdin's portfolio",
-    "description": "Plugins developed by me",
+    "description": "A Krita plugin to browse images and create image boards.",
     "plugin": {
       "title": "Imagine Board",
       "slug": "imagine-board"
-    }
+    },
+    "wiki": "https://github.com/EyeOdin/imagine_board/wiki",
+    "sections": [
+      {
+        "description": "Color Picker",
+        "video": "/videos/imagine_board_WEBM_ib_color_picker.webm"
+      },
+      {
+        "description": "Functions (Context)",
+        "video": "/videos/imagine_board_WEBM_ib_function_context.webm"
+      },
+      {
+        "description": "Functions (Drop)",
+        "video": "/videos/imagine_board_WEBM_ib_function_drop.webm"
+      },
+      {
+        "description": "Functions (Run)",
+        "video": "/videos/imagine_board_WEBM_ib_function_run.webm"
+      },
+      {
+        "description": "Preview (Open)",
+        "video": "/videos/imagine_board_WEBM_ib_preview_open.webm"
+      },
+      {
+        "description": "Preview (Pagination)",
+        "video": "/videos/imagine_board_WEBM_ib_preview_pagination.webm"
+      },
+      {
+        "description": "Preview (Pan Zoom)",
+        "video": "/videos/imagine_board_WEBM_ib_preview_pan_zoom.webm"
+      },
+      {
+        "description": "Preview (Slideshow)",
+        "video": "/videos/imagine_board_WEBM_ib_preview_slideshow.webm"
+      },
+      {
+        "description": "Reference (Camera Zoom)",
+        "video": "/videos/imagine_board_WEBM_ib_reference_camera_zoom.webm"
+      },
+      {
+        "description": "Reference (Insert Pack)",
+        "video": "/videos/imagine_board_WEBM_ib_reference_insert_pack.webm"
+      },
+      {
+        "description": "Reference (Labels)",
+        "video": "/videos/imagine_board_WEBM_ib_reference_label.webm"
+      },
+      {
+        "description": "Reference (Link)",
+        "video": "/videos/imagine_board_WEBM_ib_reference_link.webm"
+      },
+      {
+        "description": "Reference (Pin Transformation Reset)",
+        "video": "/videos/imagine_board_WEBM_ib_reference_pin_transformation_reset.webm"
+      },
+      {
+        "description": "Insert Pin (via URL)",
+        "video": "/videos/imagine_board_WEBM_ib_reference_url.webm"
+      },
+      {
+        "description": "Transparency",
+        "video": "/videos/imagine_board_WEBM_ib_transparency.webm"
+      }
+    ]
   },
   "/plugins/timer-watch.html": {
     "title": "Timer Watch | Plugins | EyeOdin's portfolio",
-    "description": "Plugins developed by me",
+    "description": "A time management tool to keep track of time spent working (e.g.: during a drawing session)",
     "plugin": {
       "title": "Timer Watch",
       "slug": "timer-watch"
-    }
+    },
+    "wiki": "https://github.com/EyeOdin/timer_watch/wiki",
+    "sections": [
+      {
+        "description": "Ui with scalable LCD numbers for easy readability.",
+        "video": "/videos/tw_progress.webm"
+      },
+      {
+        "description": "Swap between clock and stopwatch",
+        "video": "/videos/tw_swap.webm"
+      },
+      {
+        "description": "Clock displays the current system hour (formatted as 'hh:mm'). Underneath, it shows the progress for your time goal",
+        "video": "/videos/tw_clock.webm"
+      },
+      {
+        "description": "Stopwatch displays the elapsed time (formatted as 'hh:mm:s') and it can start, pause, or reset the count. Underneath, it shows the progress for your time goal.",
+        "video": "/videos/tw_stopwatch_play_pause.webm"
+      },
+      {
+        "description": "The time goal can be set with an editable message or alarm warning.",
+        "video": "/videos/tw_stopwatch_alarm.webm"
+      }
+    ]
   },
   "/tips/index.html": {
     "title": "Illustrator Best Practices | EyeOdin",
