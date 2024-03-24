@@ -86,16 +86,16 @@
     ],
     "plugins": [
       {
-        "title": "Project Pages",
-        "slug": "project-pages"
-      },
-      {
         "title": "Pigment.O",
         "slug": "pigment-o"
       },
       {
         "title": "Imagine Board",
         "slug": "imagine-board"
+      },
+      {
+        "title": "Project Pages",
+        "slug": "project-pages"
       },
       {
         "title": "Timer Watch",
