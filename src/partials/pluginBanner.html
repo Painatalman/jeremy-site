@@ -1,13 +1,14 @@
 <h1
-  class="relative flex aspect-video items-center justify-center overflow-hidden rounded-t-3xl text-center before:absolute before:inset-0 before:bg-black before:bg-opacity-80"
+  class="relative flex items-center justify-center overflow-hidden rounded-t-3xl pb-8 pt-24 text-center"
 >
-  <img
-    src="/images/plugins/{{ slug }}/banner.png"
-    class="h-full w-full object-cover"
-    alt=""
-  />
   <span
-    class="text-white absolute inset-0 flex items-center justify-center text-[4rem]"
-    >{{ title }}</span
+    class="flex-center flex items-center justify-center text-[4rem] leading-none text-white"
+  >
+    <img
+      alt=""
+      src="/images/plugins/{{this.slug}}/icon.png"
+      class="w-20 pr-4"
+    />
+    {{ title }}</span
   >
 </h1>
