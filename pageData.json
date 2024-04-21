@@ -21,6 +21,73 @@
       { "url": "https://placekitten.com/1200/767", "alt": "" }
     ]
   },
+  "/vtubers.html": {
+    "title": "VTubers | EyeOdin's Portfolio",
+    "description": "My collection of VTuber models",
+    "vtubers": [
+      {
+        "name": "AlisaDraws",
+        "demos": [
+          {
+            "description": "Full body",
+            "video": "/videos/vtuber-alisadraws/body.webm"
+          },
+          {
+            "description": "Head",
+            "video": "/videos/vtuber-alisadraws/head.webm"
+          },
+          {
+            "description": "Eyeballs",
+            "video": "/videos/vtuber-alisadraws/eyeball.webm"
+          },
+          {
+            "description": "Blinking",
+            "video": "/videos/vtuber-alisadraws/blink.webm"
+          },
+          {
+            "description": "Mouth (for speech animation)",
+            "video": "/videos/vtuber-alisadraws/speech.webm"
+          },
+          {
+            "description": "Lips",
+            "video": "/videos/vtuber-alisadraws/lips.webm"
+          },
+          {
+            "description": "Shoulders",
+            "video": "/videos/vtuber-alisadraws/shoulder.webm"
+          },
+          {
+            "description": "Elbow",
+            "video": "/videos/vtuber-alisadraws/elbow.webm"
+          },
+          {
+            "description": "Fingers",
+            "video": "/videos/vtuber-alisadraws/fingers.webm"
+          },
+          {
+            "description": "Skirt",
+            "video": "/videos/vtuber-alisadraws/skirt.webm"
+          },
+          {
+            "description": "Tail",
+            "video": "/videos/vtuber-alisadraws/tail.webm"
+          },
+          {
+            "description": "Legs",
+            "video": "/videos/vtuber-alisadraws/leg.webm"
+          },
+          {
+            "description": "Ankle",
+            "video": "/videos/vtuber-alisadraws/ankle.webm"
+          },
+          {
+            "description": "Feet",
+            "video": "/videos/vtuber-alisadraws/feet.webm"
+          }
+        ]
+      }
+    ]
+  },
   "/commissions/index.html": {
     "title": "Commissions | EyeOdin's Portfolio",
     "description": "Prices for my services",
@@ -111,6 +178,7 @@
       "slug": "project-pages"
     },
     "wiki": "https://github.com/EyeOdin/project_pages/wiki",
+    "github": "https://github.com/EyeOdin/project_pages",
     "sections": [
       {
         "description": "File management",
@@ -150,6 +218,7 @@
       "slug": "pigment-o"
     },
     "wiki": "https://github.com/EyeOdin/Pigment.O/wiki",
+    "github": "https://github.com/EyeOdin/Pigment.O",
     "sections": [
       {
         "description": "Channel sliders allow fine adjustment within their own respective spaces.",
@@ -222,6 +291,7 @@
       "slug": "imagine-board"
     },
     "wiki": "https://github.com/EyeOdin/imagine_board/wiki",
+    "github": "https://github.com/EyeOdin/imagine_board",
     "sections": [
       {
         "description": "Color Picker",
@@ -293,6 +363,7 @@
       "slug": "timer-watch"
     },
     "wiki": "https://github.com/EyeOdin/timer_watch/wiki",
+    "github": "https://github.com/EyeOdin/timer_watch",
     "sections": [
       {
         "description": "Ui with scalable LCD numbers for easy readability.",
