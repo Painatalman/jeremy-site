@@ -1,14 +1,18 @@
 {
   "name": "ricardo-jeremias-site",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "cross-env TAILWIND_MODE=watch vite",
     "build": "cross-env-shell TAILWIND_MODE=build BASE_URL=https://painatalman.github.io/jeremy-site/ vite build --base=https://painatalman.github.io/jeremy-site/",
     "preview": "vite preview",
     "commit-with-cz": "cz",
-    "prepare": "husky"
+    "prepare": "husky",
+    "release-first": "npx commit-and-tag-version --first-release",
+    "release-patch": "npx commit-and-tag-version",
+    "release-minor": "npx commit-and-tag-version --release-as minor",
+    "release-major": "npx commit-and-tag-version --release-as major"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",

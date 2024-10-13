@@ -4,7 +4,6 @@ All notable changes to this project will be documented in this file. See [commit
 
 ## 0.0.1 (2024-10-13)
 
-
 ### Features
 
 * improve home page, change container width ([bff6072](https://github.com/Painatalman/jeremy-site/commit/bff6072daf1a644516af65798b0d108783a2d7b3))
@@ -13,7 +12,6 @@ All notable changes to this project will be documented in this file. See [commit
 * improve styling ([2b65f68](https://github.com/Painatalman/jeremy-site/commit/2b65f682b2fd2d3f84165c4bdf89d04321147e9d))
 * increase size ([7d9ab87](https://github.com/Painatalman/jeremy-site/commit/7d9ab8733d4ce3041ee96182c6c71b2b0f3eb4ce))
 * update VTubers and Plugin pages ([d40130d](https://github.com/Painatalman/jeremy-site/commit/d40130dac820b84f6d15834f9f7d075bd5793a36))
-
 
 ### Bug Fixes
 
