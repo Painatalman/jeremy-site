@@ -1,11 +1,5 @@
-# Ricardo Jeremias Website
+# jeremy-site
 
-## Get Started
+Test website done with Vite and Tailwind
 
-- Do nothing
-- npm install
-- who cares?
-
-## Changelog
-
-### What else?
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
