@@ -6,14 +6,20 @@
   "scripts": {
     "dev": "cross-env TAILWIND_MODE=watch vite",
     "build": "cross-env-shell TAILWIND_MODE=build BASE_URL=https://painatalman.github.io/jeremy-site/ vite build --base=https://painatalman.github.io/jeremy-site/",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "commit-with-cz": "cz",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
     "@eslint/js": "^8.47.0",
     "autoprefixer": "^10.4.14",
     "cross-env": "^7.0.3",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.47.0",
     "eslint-plugin-tailwindcss": "^3.13.0",
+    "husky": "^9.1.6",
     "postcss": "^8.4.27",
     "prettier-plugin-tailwindcss": "^0.5.3",
     "tailwindcss": "^3.3.3",
@@ -22,5 +28,10 @@
   },
   "dependencies": {
     "@barba/core": "^2.9.7"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
