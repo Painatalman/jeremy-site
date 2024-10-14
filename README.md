@@ -1,4 +1,10 @@
-# Mas queres outro título
+# Ricardo Jeremias Website
+
+## Get Started
+
+- Do nothing
+- npm install
+- who cares?
 
 ## Changelog
 
