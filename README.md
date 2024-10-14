@@ -1,2 +1,5 @@
-# jeremy-site
-Test website done with Vite and Tailwind
+## Get Started
+
+- Do nothing
+- npm install
+- who cares?
