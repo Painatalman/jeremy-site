@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.1](https://github.com/Painatalman/jeremy-site/compare/v0.1.0...v0.1.1) (2024-10-27)
+
+
+### Bug Fixes
+
+* **Illustrations:** missing featured image, image ratios ([22d472a](https://github.com/Painatalman/jeremy-site/commit/22d472aa3ac08f332172e7fd9fb05b918827e877))
+
 ## 0.1.0 (2024-10-27)
 
 
