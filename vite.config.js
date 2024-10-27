@@ -7,6 +7,9 @@ import pageData from "./pageData.json";
 import { readdirSync } from "fs";
 
 function getIllustrationPageData() {
+  function isImage(file) {
+    return file.match(/\.(jpg|jpeg|png|webp|gif)$/);
+  }
   const illustrationPageData = pageData["/illustration.html"];
   const configuredFeaturedIllustration =
     illustrationPageData?.featured_illustration;
@@ -18,16 +21,18 @@ function getIllustrationPageData() {
 
   const localFeaturedIllustration = readdirSync(
     resolve(featuredLocalFolder) ?? [],
-  ).map((illustration) => ({
-    url: `/images/illustrations/${illustration}`,
-    alt: "",
-  }))[0];
-  const localOtherIllustrations = readdirSync(resolve(localFolder)).map(
-    (illustration) => ({
+  )
+    .filter(isImage)
+    .map((illustration) => ({
+      url: `/images/illustrations/featured/${illustration}`,
+      alt: "",
+    }))[0];
+  const localOtherIllustrations = readdirSync(resolve(localFolder))
+    .filter(isImage)
+    .map((illustration) => ({
       url: `/images/illustrations/${illustration}`,
       alt: "",
-    }),
-  );
+    }));
 
   return {
     featured_illustration: configuredFeaturedIllustration?.url
