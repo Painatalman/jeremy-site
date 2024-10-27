@@ -4,6 +4,6 @@ const TYPE_ERROR = 2;
 export default {
   extends: ["@commitlint/config-conventional"],
   rules: {
-    "type-enum": [TYPE_ERROR, "always", ["chore", "feat", "fix"]],
+    "type-enum": [TYPE_ERROR, "always", ["chore", "feat", "fix", "docs"]],
   },
 };
