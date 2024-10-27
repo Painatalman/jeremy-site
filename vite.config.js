@@ -4,6 +4,41 @@ import handlebars from "vite-plugin-handlebars";
 import tailwindcss from "tailwindcss";
 import { resolve } from "path";
 import pageData from "./pageData.json";
+import { readdirSync } from "fs";
+
+function getIllustrationPageData() {
+  const illustrationPageData = pageData["/illustration.html"];
+  const configuredFeaturedIllustration =
+    illustrationPageData?.featured_illustration;
+  const configuredOtherIllustrations =
+    illustrationPageData?.other_illustrations ?? [];
+
+  const localFolder = "public/images/illustrations";
+  const featuredLocalFolder = resolve(localFolder, "featured");
+
+  const localFeaturedIllustration = readdirSync(
+    resolve(featuredLocalFolder) ?? [],
+  ).map((illustration) => ({
+    url: `/images/illustrations/${illustration}`,
+    alt: "",
+  }))[0];
+  const localOtherIllustrations = readdirSync(resolve(localFolder)).map(
+    (illustration) => ({
+      url: `/images/illustrations/${illustration}`,
+      alt: "",
+    }),
+  );
+
+  return {
+    featured_illustration: configuredFeaturedIllustration?.url
+      ? configuredFeaturedIllustration
+      : localFeaturedIllustration,
+    other_illustrations: [
+      ...localOtherIllustrations,
+      ...configuredOtherIllustrations,
+    ],
+  };
+}
 
 /**
  * @param {string} pagePath
@@ -38,9 +73,14 @@ function getPageData(pagePath) {
     ],
   };
 
+  const pageSpecificData =
+    pagePath === "/illustration.html"
+      ? getIllustrationPageData()
+      : pageData[pagePath] || {};
+
   return {
     ...DEFAULT_DATA,
-    ...(pageData[pagePath] || {}),
+    ...pageSpecificData,
   };
 }
 
