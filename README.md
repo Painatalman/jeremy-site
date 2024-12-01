@@ -1,4 +1,4 @@
-# jeremy-site
+# EyeOdin-site
 
 A website for a friend.
 It's a nice way to practice static web development, with emphasis on workflows rather than frameworks.
